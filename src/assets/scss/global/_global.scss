@@ -1,0 +1,68 @@
+@import "../variables.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: 'Gilroy', sans-serif;
+}
+
+a {
+  text-decoration: underline;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  color: $thunder;
+  background-color: $color-body;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+}
+
+input[type='checkbox'] {
+  border: none;
+}
+
+input,
+textarea {
+  padding: 17px 14px 13px;
+  margin: 0;
+  background: #FFFFFF;
+  border: 1px solid #DFE1E5;
+  border-radius: 6px;
+  font-size: 16px;
+  max-width: 100%;
+  color: $thunder;
+
+  &[type="password"] {
+    color: $slategray;
+  }
+
+  &:hover {
+    border-color: $downy;
+  }
+
+  &:focus {
+    border-color: $downy;
+  }
+
+  &::placeholder {
+    color: $slategray;
+  }
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  color: $thunder;
+  border-radius: 6px;
+  max-width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
