@@ -1,0 +1,12 @@
+@import "../../assets/scss/variables";
+
+.fetchButton {
+    width: 180px;
+    background-color: $downy;
+    color: $white;
+    margin-bottom: 20px;
+}
+
+.errorMessage {
+    color: $salmon;
+}

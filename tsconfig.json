@@ -7,7 +7,7 @@
     "jsx": "preserve",
     "lib": [
       "es6",
-      "dom",
+      "dom"
     ],
     "moduleResolution": "node",
     "noEmit": true,
@@ -19,9 +19,11 @@
     "resolveJsonModule": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "babel.config.js"
   ],
   "include": [
     "src"
-  ]
+  ],
+  "extends": "./tsconfig.paths.json"
 }

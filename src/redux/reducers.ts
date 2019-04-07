@@ -1,14 +1,19 @@
 import { Reducer, combineReducers } from 'redux';
 
 import applicationReducer from './modules/application/reducer';
-import { IState as IAuthState } from './modules/application/types';
+import postsReducer from './modules/posts/reducer';
+
+import { IState as IApplicationState } from './modules/application/types';
+import { IState as IPostsState } from './modules/posts/types';
 
 export interface ApplicationState {
-  application: IAuthState;
+  application: IApplicationState;
+  posts: IPostsState;
 }
 
 const reducers: Reducer<ApplicationState> = combineReducers<ApplicationState>({
   application: applicationReducer,
+  posts: postsReducer,
 });
 
 export default reducers;
