@@ -1,10 +1,6 @@
 import { reducerWithInitialState } from 'typescript-fsa-reducers';
-import {
-  fetchPostsRequest,
-  fetchPostsSuccess,
-  fetchPostsFailed,
-} from './actions';
-import { IState } from './types';
+import { fetchPostsRequest, fetchPostsSuccess, fetchPostsFailed } from './actions';
+import { IState } from './interfaces';
 
 const INITIAL_STATE: IState = {
   isFetching: false,
@@ -12,9 +8,7 @@ const INITIAL_STATE: IState = {
   errorMessage: '',
 };
 
-const reducer = reducerWithInitialState<IState>(
-  INITIAL_STATE
-)
+const reducer = reducerWithInitialState<IState>(INITIAL_STATE)
   .case(fetchPostsRequest, state => ({
     ...state,
     isFetching: true,
