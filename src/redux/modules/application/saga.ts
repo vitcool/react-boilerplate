@@ -1,12 +1,12 @@
 import { SagaIterator } from 'redux-saga';
 import { takeEvery } from 'redux-saga/effects';
 
-import { exampleAction } from './actions';
+import { setIsStarted } from './actions';
 
-function* exampleActionWorker(): SagaIterator {
-  console.log('exampleActionWorker');
+function* setIsStartedActionWorker(): SagaIterator {
+  console.log('setIsStartedActionWorker');
 }
 
 export default function* root(): SagaIterator {
-  yield takeEvery(exampleAction, exampleActionWorker);
+  yield takeEvery(setIsStarted, setIsStartedActionWorker);
 }
