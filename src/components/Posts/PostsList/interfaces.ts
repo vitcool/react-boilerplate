@@ -1,4 +1,4 @@
-import { IPost } from '../Post/interfaces';
+import IPost from 'models/Post';
 
 export interface IProps {
   posts: IPost[];

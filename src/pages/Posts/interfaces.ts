@@ -1,4 +1,4 @@
-import { IPost } from 'components/Posts/Post/interfaces';
+import IPost from 'models/Post';
 
 export interface IProps {
   fetchPosts: any;
