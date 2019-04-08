@@ -1,8 +1,8 @@
-import { Post } from 'components/Posts/Post/interfaces';
+import IPost from 'models/Post';
 
 export interface Props {
   fetchPosts: any;
   isFetching: boolean;
-  data: Post[];
+  data: IPost[];
   errorMessage: string;
 }

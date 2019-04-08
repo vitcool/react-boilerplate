@@ -1,10 +1,5 @@
-export interface Props {
-  post: Post;
-}
+import IPost from 'models/Post';
 
-export interface Post {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
+export interface Props {
+  post: IPost;
 }
