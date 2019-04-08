@@ -1,7 +1,7 @@
-import { Post } from 'components/Posts/Post/interfaces';
+import { IPost } from 'components/Posts/Post/interfaces';
 
 export interface IState {
   isFetching: boolean;
-  data: Post[];
+  data: IPost[];
   errorMessage: string;
 }

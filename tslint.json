@@ -1,12 +1,12 @@
 {
   "extends": [
+    "tslint:recommended",
     "tslint:latest",
     "tslint-react",
     "tslint-eslint-rules",
     "tslint-config-prettier"
   ],
   "rules": {
-    // override tslint-react rules here
     "member-access": false,
     "interface-name": false,
     "object-literal-sort-keys": false,

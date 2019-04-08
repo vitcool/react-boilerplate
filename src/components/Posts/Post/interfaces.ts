@@ -1,8 +1,8 @@
-export interface Props {
-  post: Post;
+export interface IProps {
+  post: IPost;
 }
 
-export interface Post {
+export interface IPost {
   userId: number;
   id: number;
   title: string;

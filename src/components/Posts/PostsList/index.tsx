@@ -1,14 +1,16 @@
-import React, { Fragment } from 'react';
+import React, { FunctionComponent } from 'react';
 
+import Post from '../Post';
+import { IPost } from '../Post/interfaces';
+
+import { IProps } from './interfaces';
 import styles from './Posts.module.scss';
 
-import { Props } from './interfaces';
-import Post from '../Post';
-import { Post as IPost } from '../Post/interfaces';
-
-const PostsList = (props: Props) => {
-  return <Fragment>{props.posts.map((post: IPost) =>
-    <Post post={post} key={post.id} />)}</Fragment>;
-}
+const PostsList: FunctionComponent<IProps> = (props: IProps) => {
+  return (
+    <>
+      {props.posts.map((post: IPost) => <Post post={post} key={post.id} />)}
+    </>);
+};
 
 export default PostsList;

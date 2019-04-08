@@ -1,3 +1,3 @@
-export interface Props {
-  children: object;
+export interface IProps {
+  children: Array<boolean | JSX.Element> | JSX.Element;
 }

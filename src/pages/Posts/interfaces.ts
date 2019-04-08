@@ -1,8 +1,8 @@
-import { Post } from 'components/Posts/Post/interfaces';
+import { IPost } from 'components/Posts/Post/interfaces';
 
-export interface Props {
+export interface IProps {
   fetchPosts: any;
   isFetching: boolean;
-  data: Post[];
+  data: IPost[];
   errorMessage: string;
 }

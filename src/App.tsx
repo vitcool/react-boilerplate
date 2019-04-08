@@ -4,7 +4,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 
 import config from 'redux/config';
 
-import Routes from './routes';
+import Router from './router';
 
 const { store, persistor } = config;
 
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <Routes />
+          <Router />
         </PersistGate>
       </Provider>
     );

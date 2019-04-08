@@ -15,7 +15,7 @@ import Home from '../pages/Home';
 import Posts from '../containers/Posts';
 import About from '../pages/About';
 
-const Routes = () => (
+const Index = () => (
   <Router history={history}>
     <Switch>
       <Route exact={true} path={HOME} component={Home} />
@@ -26,4 +26,4 @@ const Routes = () => (
   </Router>
 );
 
-export default Routes;
+export default Index;

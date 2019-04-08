@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-import { Props } from './interfaces';
+import { IProps } from './interfaces';
 import styles from './Post.module.scss';
 
-const Post = (props: Props) => {
+const Post: FunctionComponent<IProps> = (props: IProps) => {
     const { post } = props;
-    return <div className={styles.postWrapper} key={post.id}>
-        <div className={styles.postTitle}>{post.title}</div>
-        <div className={styles.postDescription}>{post.body}</div>
-    </div>
-}
+
+    return (
+        <div className={styles.postWrapper} key={post.id}>
+            <div className={styles.postTitle}>{post.title}</div>
+            <div className={styles.postDescription}>{post.body}</div>
+        </div>
+    );
+};
 
 export default Post;
